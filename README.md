@@ -69,7 +69,7 @@ The steps to deploy (at a high level) are:
     1. `pipenv install gunicorn` - the webserver for Heroku to use (rather than the one built-in to Django)
     2. `pipenv install psycopg2-binary` - PostgreSQL client binaries
     3. `pipenv install dj-database-url` - enables parameterizing the database connection (so Heroku uses PostgreSQL but local is still SQLite)
-    4. `pipenv install whitenoise` - optimizes deployment of static files (you may not have any, but it's good to add this now)
+    4. `pipenv install whitenoise` - optimizes deployment of static files (you may not have any, but it's good to add this now) .
     5. If using `virtualenv`, you need to create a `requirements.txt` file in your project root directory with the command: `pip freeze > requirements.txt`
 6. Prepare your project
     1. Copy the `dotenv` file in this repository to `.env` in your repository (this should *not* be checked in)
